@@ -64,16 +64,19 @@ a:hover{
 	padding: 5px;
 	text-align: center;
 }
-.div-texto{
-	display: inline-block;
-	color: #F7F8E0;
-	width: 35%;
-	text-align: justify;
-	margin-right: 25px;
-}
 #contenido-texto{
 	margin-top: 50px;
 	padding-left: 10%;
+}
+.div-texto{
+	display: inline-block;
+	color: #F7F8E0;
+	width: 37%;
+	text-align: justify;
+	margin-right: 45px;
+}
+.div-texto p{
+	margin-bottom: 15px;
 }
 .show{
 	display: none;
