@@ -25,16 +25,21 @@ nav a:hover{
 }
 /*Estilos de la section Pandas-fotos*/
 #pandas{
-	margin-top: 70px;
+	width: 100%;
+	margin-top: 100px;
+
 }
 .div-contenedor{
 	position: relative;
 	display: inline-block;
-	width: 21%;
-	margin-top: 45px;
+	width: 18%;
+	height: 200px;
+	margin: 20px;
 }
 .div-contenedor img{
-	width: 100%;
+	position: absolute;
+	width:100%;
+	height: 100%;
 	border: 10px solid grey;
 }
 .div-contenedor button{
