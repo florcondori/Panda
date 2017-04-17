@@ -12,6 +12,16 @@ window.addEventListener("load", function(){
 	for(var i=0; i<arrayBtn.length; i++){
 		arrayBtn[i].addEventListener("click", openImagen);
 	}
+
+	//restaurar imagenes
+	var arrayImg = document.getElementsByClassName("div-contenedor");
+	var restaurar = document.getElementById("restaurar");
+	restaurar.addEventListener("click", function(e){
+		e.preventDefault();
+		for(var i=0; i<arrayImg.length; i++){
+			arrayImg[i].removeAttribute("style");
+		}
+	});
 });
 
 function cargarImagenes(arrayImagenes){
@@ -36,6 +46,7 @@ function cargarImagenes(arrayImagenes){
 			return documentFragment;
 }
 
-function openImagen(){
+function openImagen(e){
+	e.preventDefault();
 	this.parentNode.style.display = "none";
 }

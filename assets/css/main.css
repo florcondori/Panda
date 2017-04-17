@@ -15,25 +15,28 @@ nav{
 	height: 70px;
 	padding-left: 100px;
 }
-nav a{
+a{
 	display: inline-block;
 	color: #F2F2F2;
+}
+nav a{
 	margin: 20px;
 }
-nav a:hover{
+a:hover{
 	color: #FFFFFF;
 }
 /*Estilos de la section Pandas-fotos*/
 #pandas{
 	width: 100%;
 	margin-top: 100px;
+	padding-left: 10%;
 }
 .div-contenedor{
 	position: relative;
 	display: inline-block;
 	width: 18%;
 	height: 200px;
-	margin: 20px;
+	margin-right: 20px;
 }
 .div-contenedor img{
 	position: absolute;
@@ -48,4 +51,16 @@ nav a:hover{
 	color: white;
 	top:15px;
 	left: 15px;
+}
+/*Etilos del contenido*/
+#contenido{
+	margin-top: 20px;
+	padding-left: 10%;
+}
+.contenedor-btns a{
+	text-decoration: none;
+	background: #DF0101;
+	width: 25%;
+	padding: 5px;
+	text-align: center;
 }
