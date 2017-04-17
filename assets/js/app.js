@@ -22,6 +22,19 @@ window.addEventListener("load", function(){
 			arrayImg[i].removeAttribute("style");
 		}
 	});
+
+	//esconder div's
+	var origin = document.getElementById("origin");
+	origin.addEventListener("click", function(e){
+		e.preventDefault();
+		document.getElementById("contenido-origin").classList.toggle("show");
+	});
+
+	var extincion = document.getElementById("extincion");
+	extincion.addEventListener("click", function(e){
+		e.preventDefault();
+		document.getElementById("contenido-extincion").classList.toggle("show");
+	});
 });
 
 function cargarImagenes(arrayImagenes){
