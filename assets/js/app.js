@@ -3,9 +3,15 @@ window.addEventListener("load", function(){
 						{name:"Oso Panda en el Arbol", url:"panda_arbol.jpg"},
 						{name:"Panda con su hijo", url:"panda_hijo.jpg"},
 						{name:"Oso Panda sentado", url:"panda_sentado.jpg"}];
-
+	//agregando img dinamicamente
 	var seccionFotos = document.getElementById("pandas");
 	seccionFotos.appendChild(cargarImagenes(arrayImagenes));
+
+	//eliminando fotos
+	var arrayBtn = document.getElementsByClassName("js-btn-cerrar-img");
+	for(var i=0; i<arrayBtn.length; i++){
+		arrayBtn[i].addEventListener("click", openImagen);
+	}
 });
 
 function cargarImagenes(arrayImagenes){
@@ -28,4 +34,8 @@ function cargarImagenes(arrayImagenes){
 	});
 
 			return documentFragment;
+}
+
+function openImagen(){
+	this.parentNode.style.display = "none";
 }
