@@ -1,1 +1,19 @@
-main
+*{
+	font-family: Arial, helvetica;
+	margin:0px;
+}
+nav{
+	position: fixed;
+	background: #DF0101;
+	width: 100%;
+	height: 70px;
+	padding-left: 100px;
+}
+nav a{
+	display: inline-block;
+	color: #F2F2F2;
+	margin: 20px;
+}
+nav a:hover{
+	color: #FFFFFF;
+}
