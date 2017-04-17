@@ -1,8 +1,14 @@
 *{
 	font-family: Arial, helvetica;
 	margin:0px;
+	box-sizing: border-box;
 }
+body{
+	background-color: #181407;
+}
+/*Estilos de NavBar*/
 nav{
+	top:0px;
 	position: fixed;
 	background: #DF0101;
 	width: 100%;
@@ -16,4 +22,26 @@ nav a{
 }
 nav a:hover{
 	color: #FFFFFF;
+}
+/*Estilos de la section Pandas-fotos*/
+#pandas{
+	margin-top: 70px;
+}
+.div-contenedor{
+	position: relative;
+	display: inline-block;
+	width: 21%;
+	margin-top: 45px;
+}
+.div-contenedor img{
+	width: 100%;
+	border: 10px solid grey;
+}
+.div-contenedor button{
+	position: absolute;
+	background: none;
+	border: none;
+	color: white;
+	top:15px;
+	left: 15px;
 }
